@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple List using List.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="http://listjs.com/assets/javascripts/list.min.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="read-write-file.js"></script> -->
+</head>
+
+<body>
+    <div id="contacts">
+        <input type="text" id="myInput" class="search" placeholder="Search Products" />
+        <table id="customers">
+            <thead>
+                <tr>
+                    <th class="sort" data-sort="name">Item Name</th>
+                    <th class="sort" data-sort="price">Price</th>
+                    <th class="sort" data-sort="description">Item Description</th>
+                    <th colspan="2"> Operations</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                <tr>
+                    <td class="id" style="display:none;">1</td>
+                    <td class="name">Item 1</td>
+                    <td class="price">$27</td>
+                    <td class="description">Bag</td>
+                    <td class="edit">
+                        <button class="edit-item-btn">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id" style="display:none;">2</td>
+                    <td class="name">Item 2</td>
+                    <td class="price">$13</td>
+                    <td class="description">Cake</td>
+                    <td class="edit">
+                        <button class="edit-item-btn">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id" style="display:none;">3</td>
+                    <td class="name">Item 3</td>
+                    <td class="price">$23</td>
+                    <td class="description">Milk</td>
+                    <td class="edit">
+                        <button class="edit-item-btn">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id" style="display:none;">4</td>
+                    <td class="name">Item 4</td>
+                    <td class="price">$26</td>
+                    <td class="description">Pants</td>
+                    <td class="edit">
+                        <button class="edit-item-btn">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="myTable">
+            <td class="name">
+                <input type="hidden" id="id-field" />
+                <input type="text" id="name-field" class="full-width" placeholder="Item Name" />
+            </td>
+            <td class="price">
+                <input type="text" id="price-field" class="full-width" placeholder="Price" />
+            </td>
+            <td class="description">
+                <input type="text" id="description-field" class="full-width" placeholder="Description" />
+            </td>
+            <td class="add">
+                <button id="add-btn">Add</button>
+                <button id="edit-btn">Edit</button>
+            </td>
+        </table>
+    </div>
+</body>
+
+</html>
